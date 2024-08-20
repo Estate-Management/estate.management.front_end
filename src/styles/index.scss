@@ -1,0 +1,27 @@
+@import "./variables";
+@import "bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: $color1 !important;
+  border-color: $color1 !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
+  box-shadow: none !important;
+}
+
+div:where(.swal2-icon).swal2-warning,
+div:where(.swal2-icon).swal2-info,
+div:where(.swal2-icon).swal2-question {
+  border-color: $color1-op-50 !important;
+  color: $color1 !important;
+}

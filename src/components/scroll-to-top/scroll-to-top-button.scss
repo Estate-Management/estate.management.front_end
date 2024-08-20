@@ -1,0 +1,11 @@
+@use "../../styles/mixins" as m;
+
+.btn-scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  box-shadow: 0 2px 15px rgb(248, 247, 247);
+  font-size: 1.5rem !important;
+  padding: 0.5rem !important;
+}
