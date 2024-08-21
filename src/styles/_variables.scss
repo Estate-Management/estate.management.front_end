@@ -1,29 +1,25 @@
 /* COMMON */
-// $color1: #1A4D2E;
-$color1: #071952;
-$color2: #088395;
-$color3: #dfdfdf;
-$color4: #57A6A1;
-$color5: #F5EFE6;
-$color6: #577B8D;
+$color1: #f49518;
+$color2: #292118;
+$color3: #3f2503;
+$color4: white;
+
 $color1-op-50: rgba($color1, 0.5);
 $color1-op-30: rgba($color1, 0.3);
 $color2-op-50: rgba($color2, 0.5);
 $color2-op-10: rgba($color2, 0.1);
 $color2-op-5: rgba($color2, 0.05);
 $color3-op-50: rgba($color3, 0.5);
-$color5-op-30: rgba($color5, 0.3);
-$color6-op-50: rgba($color6, 0.3);
 $vendors: ("", "-webkit-", "-moz-", "-ms-", "-o-");
 
 /* BOOTSTRAP */
 $font-family-sans-serif: var(--font-montserrat);
 $primary: $color1;
-$secondary: $color4;
+$secondary: $color3;
 $success: $color3;
 $light: $color3;
 $navbar-light-color: $color3;
-$navbar-light-hover-color: $color5;
-$navbar-light-active-color: $color5;
+$navbar-light-hover-color: $color3;
+$navbar-light-active-color: $color3;
 $navbar-nav-link-padding-x: "1rem";
 $nav-link-font-weight: 300;

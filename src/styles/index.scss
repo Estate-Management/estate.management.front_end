@@ -4,10 +4,19 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; // Normal metinlerde 400 ağırlığı kullanılır
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700; // Başlıklarda 700 ağırlığı kullanılır
 }
 a {
   text-decoration: none;
-  
 }
 
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {

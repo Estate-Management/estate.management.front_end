@@ -1,9 +1,14 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { config } from "@/helpers/config";
 import "@/styles/index.scss";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import Header from "@/components/common/header/Header";
+import Footer from "@/components/common/footer/Footer";
+import Spacer from "@/components/common/spacer";
+import ScrollToTopButton from "@/components/scroll-to-top/scroll-to-top-button";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
 export const metadata = {
   title: {
     template: `%s | ${config.project.name}`,
@@ -21,17 +26,22 @@ export default function RootLayout({ children }) {
           rel="icon"
           href="./icon?<generated>"
           type="image/<generated>"
-          sizes="<generated>"          
+          sizes="<generated>"
         />
         <link
           rel="apple-touch-icon"
           href="./apple-icon?<generated>"
           type="image/<generated>"
-          sizes="<generated>"         
+          sizes="<generated>"
         />
       </head>
-      <body className={inter.className}>
+      <body className={poppins.className}>
+        <Header />
+        <Spacer height={10} />
         {children}
+        <Spacer height={10} />
+        <ScrollToTopButton />
+        <Footer />
       </body>
     </html>
   );

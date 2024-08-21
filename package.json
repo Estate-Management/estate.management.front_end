@@ -1,5 +1,5 @@
 {
-  "name": "cossinest-homes",
+  "name": "luvenda",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -34,6 +34,7 @@
     "react-input-mask-next": "^3.0.0-alpha.12",
     "react-loader-spinner": "^6.1.6",
     "react-responsive-carousel": "^3.2.23",
+    "react-scroll-to-top": "^3.0.0",
     "react-share": "^5.1.0",
     "react-switch": "^7.0.0",
     "resolve-url-loader": "^5.0.0",

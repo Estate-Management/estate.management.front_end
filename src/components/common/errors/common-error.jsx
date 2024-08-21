@@ -10,7 +10,7 @@ const CommonError = ({ error, reset }) => {
       <Row className="g-5 g-sm-0 align-items-center ">
         <Col sm={6}>
           <Image
-            src="/images/errors/error.png"
+            src="/images/errors/error.jpg"
             className="img-fluid"
             width={500}
             height={500}
@@ -18,16 +18,12 @@ const CommonError = ({ error, reset }) => {
           />
         </Col>
         <Col sm={6} className="text-center text-sm-start">
-          <h2>Something went wrong.</h2>
+          <h2>Oops! It looks like something went wrong.</h2>
           <p>
-            An unexpected error has occurred. We apologize for the
-            inconvenience. Our technical team has been notified and is working
-            to resolve the issue. Please try again later. If the problem
-            persists, feel free to contact our support team for assistance.
-            Thank you for your understanding.
+            The page you are looking for is currently unavailable. Try to search again or return to the homepage.
           </p>
           <button className="btn btn-primary" onClick={() => reset()}>
-            Try Again
+            Go to Home Page
           </button>
         </Col>
       </Row>

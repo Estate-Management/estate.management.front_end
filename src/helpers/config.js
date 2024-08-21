@@ -1,19 +1,19 @@
 export const config = {
   project: {
-    name: "Luveda",
-    slogan: "Unlocking Your Home's potential, Together",
+    name: "Luvenda",
+    slogan: "Find your dream home",
     description:
-      " At Luveda Home, our mission is to provide exceptional real estate services with integrity, innovation, and dedication. We are committed to understanding our clients' unique needs and delivering personalized solutions that exceed their expectations. Our goal is to create lasting relationships built on trust and transparency, ensuring a seamless and rewarding real estate experience for every client.",
+      "At Luvenda Home, we believe that real estate should be accessible to everyone. We are dedicated to helping you find the perfect home. Join us on this adventure. Let us help you find your dream home.",
     version: "1.0.0",
   },
   contact: {
     phone1: "+1 (212) 489-4335",
-    email: "Luveda@gmail.com",
-    address: "329 Queensberry Street, North Melbourne VIC 3051, Australia",
+    email: "Luvenda@gmail.com",
+    address: "Queensberry Street, North Melbourne VIC 3051, Australia",
     website: "",
     mapURL: "https://maps.app.goo.gl/95BydZ75KcKKvzBC6",
     mapEmbedURL:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98649.70320473002!2d32.74750903186368!3d39.94997082578832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34e6f51a3317b%3A0x7415e004939401c0!2sAnkara%20Kalesi!5e0!3m2!1str!2str!4v1714339943288!5m2!1str!2str",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.096278969!2d144.95287577555067!3d-37.80374193346481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d31639fb579%3A0xec571891854b2d49!2sQueensberry%20St%2C%20Melbourne%20VIC%2C%20Australia!5e1!3m2!1sen!2str!4v1724231133642!5m2!1sen!2str",
     socialMedia: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",

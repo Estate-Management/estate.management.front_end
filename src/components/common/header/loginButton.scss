@@ -1,0 +1,25 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+.login-button {
+  background-color: v.$color4;
+  color: v.$color3;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: v.$color1;
+    color: v.$color4;
+    border: 1px solid v.$color4;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px v.$color3;
+  }
+  &:active {
+    background-color: v.$color1;
+  }
+}

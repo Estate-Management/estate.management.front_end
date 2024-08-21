@@ -1,0 +1,46 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+.header-container {
+  background-color: v.$color1;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+
+  .header-row {
+    @include m.flex($ai: center);
+    background-color: v.$color1;
+
+    .header-logo {
+      text-align: center;
+    }
+    .header-login {
+      text-align: center;
+    }
+    .header-menu {
+      font-size: 1.2rem;
+    }
+    .header-nav {
+      .navbar-collapse {
+        @include m.flex($jc: space-between, $ai: center);
+      }
+      .navbar-toggler {
+        margin: auto;
+        color: v.$color1;
+        border-color: v.$color3;
+        background-color: white !important;
+        &:hover {
+          background-color: v.$color1 !important;
+          color: v.$color4;
+          border-color: v.$color4;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .navbar-collapse {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
