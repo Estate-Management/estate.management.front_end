@@ -6,6 +6,7 @@
   position: sticky;
   top: 0;
   padding: 10px;
+  z-index: 1001;
 
   .header-row {
     @include m.flex($ai: center);
@@ -28,7 +29,7 @@
         margin: auto;
         color: v.$color1;
         border-color: v.$color3;
-        background-color: white !important;
+        background-color: v.$color4 !important;
         &:hover {
           background-color: v.$color1 !important;
           color: v.$color4;
