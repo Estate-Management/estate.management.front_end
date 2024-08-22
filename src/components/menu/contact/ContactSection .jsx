@@ -27,7 +27,7 @@ const position = [41.0082, 28.9784]; // Sultanahmet'in koordinatları
 const ContactSection = () => {
   return (
     <section className="contact-section">
-      <Container fluid>
+      <Container >
         <Row className="position-relative">
           <Col md={12} className="map-section">
             <MapContainer
