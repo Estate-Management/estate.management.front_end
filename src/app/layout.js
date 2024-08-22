@@ -3,7 +3,6 @@ import { config } from "@/helpers/config";
 import "@/styles/index.scss";
 import Header from "@/components/common/header/Header";
 import Footer from "@/components/common/footer/Footer";
-import Spacer from "@/components/common/spacer";
 import ScrollToTopButton from "@/components/scroll-to-top/scroll-to-top-button";
 const poppins = Poppins({
   subsets: ["latin"],
