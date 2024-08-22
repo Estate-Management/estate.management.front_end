@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Spinner } from "react-bootstrap";
 import { Hourglass } from "react-loader-spinner";
 
 const Loading = () => {
@@ -13,11 +12,6 @@ const Loading = () => {
         alignItems: "center",
       }}
     >
-      {/* <Spinner
-				animation="border"
-				variant="success"
-				style={{ width: "5rem", height: "5rem" }}
-			/> */}
       <Hourglass
         visible={true}
         height="60"
@@ -25,7 +19,7 @@ const Loading = () => {
         ariaLabel="hourglass-loading"
         wrapperStyle={{}}
         wrapperClass=""
-        colors={[" #088395", " #088395"]}
+        colors={[" #fedb2c", "#f49518"]}
       />
     </div>
   );

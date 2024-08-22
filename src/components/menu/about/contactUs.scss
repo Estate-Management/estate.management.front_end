@@ -1,0 +1,62 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+
+.contact-us-section {
+    padding: 20px 0;
+  
+    .text-section {
+      .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+  
+      .subtitle {
+        font-size: 1rem;
+        color: v.$color3;
+      }
+    }
+  
+    .button-section {
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+      margin-top: 15px;
+  
+      .contact-button, .contact-button-alt {
+        border-radius: 50px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+  
+      .contact-button {
+        color: v.$color3;
+        border: 1px solid v.$color3;
+        font-weight: 500;
+  
+        .arrow-icon {
+          font-size: 1rem;
+        }
+      }
+  
+      .contact-button-alt {
+        background-color: v.$color4;
+        color: v.$color3;
+        font-weight: 500;
+  
+        .phone-icon {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  
+    @media (max-width: 992px) {
+      .contact-us-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+  

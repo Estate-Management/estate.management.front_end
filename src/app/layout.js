@@ -37,9 +37,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={poppins.className}>
         <Header />
-        <Spacer height={10} />
         {children}
-        <Spacer height={10} />
         <ScrollToTopButton />
         <Footer />
       </body>

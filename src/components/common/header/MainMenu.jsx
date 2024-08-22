@@ -3,9 +3,6 @@ import React, { useState } from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import "./mainMenu.scss";
 import Menu from "./Menu";
-
-
-
 const MainMenu = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -29,7 +26,9 @@ const MainMenu = () => {
         className="offcanvas-header-menu"
       >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title><h3>Menu</h3></Offcanvas.Title>
+          <Offcanvas.Title>
+            <h3>Menu</h3>
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className="offcanvas-body">
           <Menu className="menu" />

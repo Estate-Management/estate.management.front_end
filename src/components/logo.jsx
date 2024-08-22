@@ -10,8 +10,8 @@ const Logo = ({ type = "light", className}) => {
       <Image
         src={`/images/logo-with-name.png`}
         alt="logo"
-        width={200}
-        height={80}
+        width={170}
+        height={70}
         className={className}
       />
     </NavbarBrand>

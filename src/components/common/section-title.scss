@@ -1,8 +1,11 @@
 @use "../../styles/variables" as v;
 
 .section-title {
-	text-align: center;
-	color: v.$color1;
-	margin-bottom: 50px;
-	font-size: 2.1rem;
+	text-align: left;
+	color: v.$color2;
+	font-size: 3rem;
+	background: linear-gradient( v.$color4, v.$color1);
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }

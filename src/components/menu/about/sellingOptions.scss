@@ -1,0 +1,61 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+.selling-options-section {
+    padding: 50px 0;
+  
+    .selling-text {
+      .selling-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+  
+      .selling-points {
+        .selling-point {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 20px;
+  
+          .icon {
+            margin-right: 15px;
+          }
+  
+          .text {
+            h3 {
+              font-size: 1.25rem;
+              margin-bottom: 5px;
+            }
+  
+            p {
+              color: v.$color3;
+            }
+          }
+        }
+      }
+    }
+  
+    .selling-image {
+      text-align: center;
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .selling-text {
+        text-align: left;
+  
+        .selling-points {
+          justify-content: center;
+        }
+      }
+  
+      .selling-image {
+        margin-top: 30px;
+      }
+    }
+  }
+  

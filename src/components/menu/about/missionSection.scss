@@ -1,0 +1,61 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+.mission-section {
+  padding: 50px 0;
+
+  .mission-image {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .mission-text {
+    .mission-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .mission-description {
+      font-size: 1rem;
+      color: v.$color3;
+      margin-bottom: 30px;
+    }
+
+    .mission-options {
+      .option {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .option-circle {
+          width: 25px;
+          height: 25px;
+          background-color: v.$color1;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        .option-text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .mission-text {
+      text-align: left;
+      margin-top: 30px;
+
+      .mission-options {
+        justify-content: center;
+      }
+    }
+  }
+}
