@@ -1,0 +1,50 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+.form-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  .form-control {
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 2px solid v.$color3;
+    border-radius: 0;
+    box-shadow: none;
+
+    &:focus {
+      border-bottom-color:v.$color1;
+      box-shadow: none;
+    }
+  }
+  .register-btn {
+    background-color: v.$color1;
+    border: none;
+    font-weight: bold;
+    padding: 0.75rem;
+    color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .login-link {
+    text-align: center;
+    margin-top: 1rem;
+
+    a {
+      color: v.$color3;
+      font-weight: bold;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+}

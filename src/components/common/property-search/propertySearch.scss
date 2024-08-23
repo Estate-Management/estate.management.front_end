@@ -32,9 +32,8 @@
         background-color: #bdc3c7;
       }
       &:focus {
-        outline: none;
-        box-shadow: none;
-        border: 1px solid v.$color3;
+        background-color: v.$color1;
+        color: v.$color3;
       }
     }
   }

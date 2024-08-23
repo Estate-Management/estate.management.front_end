@@ -1,7 +1,7 @@
-@use "../../../../styles/variables" as v;
-@use "../../../../styles/mixins" as m;
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
 
-.update-password-form {
+.login-form {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -23,7 +23,21 @@
     }
   }
 
-  .update-btn {
+  .forgot-password {
+    text-align: right;
+
+    a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .login-btn {
     background-color: v.$color1;
     border: none;
     width: 100%;
@@ -37,11 +51,25 @@
     }
   }
 
+  .register-link {
+    text-align: center;
+
+    a {
+      color: v.$color3;
+      font-weight: bold;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
-    .update-btn {
+    .login-btn {
       flex-grow: 0;
       width: 100%;
-      margin-bottom: 10px;
+      margin-top: 10px;
     }
 
     .error-code {
@@ -50,7 +78,7 @@
       font-size: 1rem;
     }
 
-    .update-password-form {
+    .login-form {
       flex-direction: column;
       align-items: center;
     }
