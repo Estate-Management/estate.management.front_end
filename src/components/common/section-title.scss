@@ -1,14 +1,14 @@
 @use "../../styles/variables" as v;
 
 .section-title-wrapper {
-	background: linear-gradient( v.$color4, v.$color1);
+  background: linear-gradient(v.$color4, v.$color1);
 
-	.section-title {
-	text-align: left;
-	color: v.$color2;
-	font-size: 3rem;
-	padding-top: 25px;
-	padding-bottom: 25px;
+  .section-title {
+    text-align: left;
+    color: v.$color2;
+    font-size: 3rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
 }
-}
-
