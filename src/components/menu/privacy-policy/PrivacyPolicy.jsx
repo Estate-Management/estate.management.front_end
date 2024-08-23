@@ -4,7 +4,7 @@ import './privacyPolicy.scss';
 
 const PrivacyPolicy = () => {
   return (
-    <Container fluid className="privacy-policy-page">
+    <Container className="privacy-policy-page">
       <Row>
         <Col>
           <Card className="policy-card">

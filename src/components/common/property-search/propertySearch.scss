@@ -1,0 +1,108 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+.property-search {
+  background: v.$color1;
+  border-radius: 15px;
+  padding: 5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-image: url("/images/property-search.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  text-shadow: v.$color3 0.1em 0.1em 0.2em;
+
+  .search-title {
+    color: v.$color1;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .search-toggle-group {
+
+    .btn-light {
+      color: v.$color3;
+      background-color: v.$color4;
+      border: 1px solid v.$color1;
+      &:hover {
+        background-color: #bdc3c7;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid v.$color3;
+      }
+    }
+  }
+
+  .search-bar {
+    display: flex;
+    margin-bottom: 1.5rem;
+
+    .form-control {
+      flex: 1;
+      border-radius: 0.25rem 0 0 0.25rem;
+    }
+
+    .search-button {
+      border-radius: 0 0.25rem 0.25rem 0;
+      background-color: v.$color1;
+      border: 1px solid v.$color3;
+      font-size: larger;
+
+      &:hover {
+        background-color: v.$color3;
+        color: v.$color1;
+      }
+    }
+  }
+
+  .property-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+    .form-check-inline {
+      font-size: 1rem;
+      color: v.$color1;
+
+      input[type="radio"] {
+        accent-color: v.$color2;
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .property-search {
+    padding: 1rem;
+
+    .search-title {
+      font-size: 1.5rem;
+    }
+
+    .search-bar {
+      flex-direction: column;
+
+      .form-control {
+        border-radius: 0.25rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .search-button {
+        width: 100%;
+        border-radius: 0.25rem;
+      }
+    }
+
+    .property-options {
+      gap: 0.5rem;
+    }
+  }
+}

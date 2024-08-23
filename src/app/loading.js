@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Hourglass } from "react-loader-spinner";
+import { Hourglass, Vortex, RotatingTriangles} from "react-loader-spinner";
 
 const Loading = () => {
   return (
@@ -12,7 +12,25 @@ const Loading = () => {
         alignItems: "center",
       }}
     >
-      <Hourglass
+    <RotatingTriangles
+  visible={true}
+  height="150"
+  width="150"
+  color="#fedb2c"
+  ariaLabel="rotating-triangles-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  />
+    {/* <Vortex
+  visible={true}
+  height="120"
+  width="120"
+  ariaLabel="vortex-loading"
+  wrapperStyle={{}}
+  wrapperClass="vortex-wrapper"
+  colors={['red', 'green', 'blue', 'yellow', 'orange', 'purple']}
+  /> */}
+      {/* <Hourglass
         visible={true}
         height="60"
         width="60"
@@ -20,7 +38,7 @@ const Loading = () => {
         wrapperStyle={{}}
         wrapperClass=""
         colors={[" #fedb2c", "#f49518"]}
-      />
+      /> */}
     </div>
   );
 };
