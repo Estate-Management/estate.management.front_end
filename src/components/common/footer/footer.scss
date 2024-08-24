@@ -1,40 +1,33 @@
-@use "../../../styles/variables" as v;
-@use "../../../styles/mixins" as m;
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
 
-footer {
-  background-color: v.$color1;
-  color: v.$color3;
+.footer {
+  background-color: $color1;
+  color: $color3;
   padding: 4rem;
   font-size: 1.2rem;
-  
-  .row {
-    @include m.flex($jc: space-evenly, $ai: start, $fw: none, $gap: 1rem);
 
-    .footer-logo {
-      @include m.flex($jc: center, $ai: start, $fd: column);
-     
-     /*  p::first-letter {
-        color: v.$color3;
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-shadow: 5px 5px 10px v.$color2;
-        font-family: cursive;
-      } */
-    }
+  .footer__logo,
+  .footer__links,
+  .footer__contact {
+    @include flex($jc: flex-start, $ai: start, $fd: column, $gap: 1rem);
+  }
 
-    .footer-links .nav {
-      @include m.flex($jc: center, $ai: start, $fd: column, $gap: 5px);
-    }
+  .footer__description {
+    margin-top: 1rem;
+  }
 
-    .footer-contact .nav {
-      @include m.flex($jc: center, $ai: start, $fd: column, $gap: 5px);
-    }
-    a {
-      color: v.$color3;
-      text-decoration: none;
-      &:hover {
-        color: v.$color2;
-      }
+  .footer__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $color3;
+    text-decoration: none;
+
+    &:hover {
+      color: $color2;
     }
   }
 }

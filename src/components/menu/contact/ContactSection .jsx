@@ -32,8 +32,8 @@ const ContactSection = () => {
           <Col md={12} className="map-section">
             <MapContainer
               center={position}
-              zoom={13}
-              scrollWheelZoom={false}
+              zoom={11}
+              scrollWheelZoom={true}
               className="leaflet-map"
             >
               <TileLayer
