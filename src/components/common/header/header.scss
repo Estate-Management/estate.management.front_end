@@ -1,47 +1,47 @@
-@use "../../../styles/variables" as v;
-@use "../../../styles/mixins" as m;
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
 
-.header-container {
-  background-color: v.$color1;
+.header {
+  background-color: $color1;
   position: sticky;
   top: 0;
   padding: 10px;
   z-index: 1001;
 
-  .header-row {
-    @include m.flex($ai: center);
-    background-color: v.$color1;
+  &__row {
+    @include flex($ai: center);
+  }
 
-    .header-logo {
-      text-align: center;
-    }
-    .header-login {
-      text-align: center;
+  &__logo,
+  &__login {
+    text-align: center;
+  }
 
+  &__menu {
+    font-size: 1.2rem;
+  }
+
+  .header-nav {
+    .navbar-collapse {
+      @include flex($jc: space-between, $ai: center);
     }
-    .header-menu {
-      font-size: 1.2rem;
+
+    .navbar-toggler {
+      margin: auto;
+      color: $color1;
+      border-color: $color3;
+      background-color: $color4 !important;
+
+      &:hover {
+        background-color: $color1 !important;
+        color: $color4;
+        border-color: $color4;
+      }
     }
-    .header-nav {
+
+    @media (max-width: 992px) {
       .navbar-collapse {
-        @include m.flex($jc: space-between, $ai: center);
-      }
-      .navbar-toggler {
-        margin: auto;
-        color: v.$color1;
-        border-color: v.$color3;
-        background-color: v.$color4 !important;
-        &:hover {
-          background-color: v.$color1 !important;
-          color: v.$color4;
-          border-color: v.$color4;
-        }
-      }
-
-      @media (max-width: 992px) {
-        .navbar-collapse {
-          display: none !important;
-        }
+        display: none !important;
       }
     }
   }

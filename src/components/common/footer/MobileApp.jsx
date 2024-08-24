@@ -8,10 +8,10 @@ const MobileApp = () => {
 		<Container className="mobile-app">
 			<Row className="g-3 justify-content-evenly align-items-center">
 				<Col className="text-start">
-					<a href="#" className="btn btn-outline-light me-2 mt-1 w-75">
+					<a href="#" className="btn btn-outline-light me-2 mt-1 w-50">
 						<IoLogoAppleAppstore className= "fs-3"/> Apple Store
 					</a>
-					<a href="#" className="btn btn-outline-light mt-1 w-75">
+					<a href="#" className="btn btn-outline-light mt-1 w-50">
 						<IoLogoGooglePlaystore className= "fs-3"/> Play Store
 					</a>
 				</Col>
