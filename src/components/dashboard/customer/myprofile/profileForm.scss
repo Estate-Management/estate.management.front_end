@@ -1,0 +1,74 @@
+@use "../../../../styles/variables" as v;
+@use "../../../../styles/mixins" as m;
+
+
+.account-form {
+    padding: 20px;
+  
+    .form-control {
+        margin-bottom: 1.5rem;
+        border: none;
+        border-bottom: 2px solid v.$color3;
+        border-radius: 0;
+        box-shadow: none;
+    
+        &:focus {
+          border-bottom-color: v.$color1;
+          box-shadow: none;
+        }
+      }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+  
+      label {
+        font-weight: bold;
+        
+      }
+    }
+  
+    .update-button {
+      background-color: v.$color1;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: v.$color3;
+      }
+    }
+  
+    .delete-account {
+      background-color:v.$color4;
+      color: #e60000;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #ffcccc;
+      }
+    }
+  }
+  
+  // Responsive styling
+  @media (max-width: 768px) {
+    .account-form {
+      padding: 10px;
+  
+      .update-button {
+        width: 100%;
+        padding: 12px;
+      }
+  
+      .delete-account {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+  }
+  
