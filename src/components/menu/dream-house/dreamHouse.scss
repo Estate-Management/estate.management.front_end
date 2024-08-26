@@ -2,20 +2,20 @@
 @use "../../../styles/mixins" as *;
 
 .dream-house-banner {
-  padding: 2rem;
   border-radius: 20px;
 
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: $color3;
-  }
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color3;
+    }
 
-  .description {
-    font-size: 1rem;
-    color: $color2;
-    margin-bottom: 1.5rem;
-  }
+    .description {
+      font-size: 1rem;
+      color: $color2;
+      margin-bottom: 1.5rem;
+    }
+  
 
   .register-button {
     .arrow {
@@ -34,12 +34,14 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .text-col,
     .image-col {
       text-align: center;
     }
-
+    .text-col{
+      margin-top: 1rem;
+    }
     .image-col {
       margin-top: 1rem;
     }

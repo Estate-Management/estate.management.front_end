@@ -8,16 +8,16 @@ const DreamHouse = () => {
   return (
     <Container className="dream-house-banner">
       <Row className="align-items-center">
-        <Col md={6} className="image-col">
+        <Col lg={6} className="image-col">
           <Image
             src={dreamHouseImage}
             alt="Dream House"
             className="img-fluid"
-            width={600}
+            width={650}
             height={500}
           />
         </Col>
-        <Col md={6} className="text-col">
+        <Col lg={6} className="text-col">
           <h2 className="title">Get your dream house</h2>
           <p className="description">
             Turn your aspirations into reality with 'Get Your Dream House' —
