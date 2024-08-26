@@ -1,19 +1,20 @@
 "use client";
-import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import './resetPassword.scss';
+import React, { useState } from "react";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import "./resetPassword.scss";
+import CustomButton from "@/components/common/custom-button/CustomButton";
 
 const ResetPassword = () => {
-  const [resetCode, setResetCode] = useState('');
-  const [newPassword, setNewPassword] = useState('');
-  const [retryNewPassword, setRetryNewPassword] = useState('');
+  const [resetCode, setResetCode] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [retryNewPassword, setRetryNewPassword] = useState("");
 
   const handleReset = (e) => {
     e.preventDefault();
     // Handle the password reset logic here
-    console.log('Reset Code:', resetCode);
-    console.log('New Password:', newPassword);
-    console.log('Retry New Password:', retryNewPassword);
+    console.log("Reset Code:", resetCode);
+    console.log("New Password:", newPassword);
+    console.log("Retry New Password:", retryNewPassword);
   };
 
   return (
@@ -51,9 +52,11 @@ const ResetPassword = () => {
               />
             </Form.Group>
 
-            <Button variant="danger" type="submit" className="reset-password-button">
+            {/* <Button variant="danger" type="submit" className="reset-password-button">
               Reset Password
-            </Button>
+            </Button> */}
+
+            <CustomButton>Reset Password</CustomButton>
           </Form>
         </Col>
       </Row>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import CustomButton from "../custom-button/CustomButton";
 const CommonError = ({ error, reset }) => {
   useEffect(() => {
     console.log(error);
@@ -23,9 +24,12 @@ const CommonError = ({ error, reset }) => {
             The page you are looking for is currently unavailable. Try to search
             again or return to the homepage.
           </p>
-          <Button className="btn btn-primary" href="/" onClick={() => reset()}>
+          {/* <Button className="btn btn-primary" href="/" onClick={() => reset()}>
             Go to Home Page
-          </Button>
+          </Button> */}
+          <CustomButton href="/" onClick={() => reset()}>
+            Go to Home Page
+          </CustomButton>
         </Col>
       </Row>
     </Container>

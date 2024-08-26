@@ -1,4 +1,5 @@
-import SectionTitle from "@/components/common/section-title";
+import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
+import Spacer from "@/components/common/spacer";
 import ResetCodeForm from "@/components/dashboard/password/forgot-password/ResetCodeForm";
 import React from "react";
 
@@ -7,6 +8,7 @@ const ForgotPasswordPage = () => {
     <>
       <SectionTitle>FORGOT PASSWORD</SectionTitle>
       <ResetCodeForm />
+      <Spacer />
     </>
   );
 };

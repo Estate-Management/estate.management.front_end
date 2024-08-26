@@ -4,6 +4,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import dynamic from "next/dynamic";
 import "leaflet/dist/leaflet.css";
 import "./contactSection.scss";
+import CustomButton from "@/components/common/custom-button/CustomButton";
 
 // Dinamik olarak MapContainer, TileLayer ve diğer bileşenleri
 const MapContainer = dynamic(
@@ -27,7 +28,7 @@ const position = [41.0082, 28.9784]; // Sultanahmet'in koordinatları
 const ContactSection = () => {
   return (
     <section className="contact-section">
-      <Container >
+      <Container>
         <Row className="position-relative">
           <Col md={12} className="map-section">
             <MapContainer
@@ -41,9 +42,7 @@ const ContactSection = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
               <Marker position={position}>
-                <Popup>
-                  Sultanahmet, İstanbul, Turkey
-                </Popup>
+                <Popup>Sultanahmet, İstanbul, Turkey</Popup>
               </Marker>
             </MapContainer>
             <div className="form-overlay">
@@ -86,10 +85,7 @@ const ContactSection = () => {
                     className="mt-3"
                   />
                 </Form.Group>
-
-                <Button variant="danger" type="submit" className="mt-3">
-                  Send
-                </Button>
+                <CustomButton>Send</CustomButton>
               </Form>
             </div>
           </Col>

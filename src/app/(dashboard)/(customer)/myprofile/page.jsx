@@ -1,4 +1,4 @@
-import SectionTitle from "@/components/common/section-title";
+import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
 import React from "react";
 import ProfileForm from "@/components/dashboard/customer/myprofile/ProfileForm";
 

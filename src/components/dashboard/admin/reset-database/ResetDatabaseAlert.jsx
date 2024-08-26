@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container, Row, Col, Alert } from "react-bootstrap";
 import "./resetDatabaseAlert.scss";
 import { FaExclamationTriangle } from "react-icons/fa";
+import CustomButton from "@/components/common/custom-button/CustomButton";
 
 const ResetDatabaseAlert = () => {
   return (
@@ -19,7 +20,8 @@ const ResetDatabaseAlert = () => {
             </span>
             <FaExclamationTriangle className="alert-icon ms-3 fs-1 text-warning" />
           </Alert>
-          <Button className="btn-custom">Reset Database</Button>
+          {/* <Button className="btn-custom">Reset Database</Button> */}
+          <CustomButton className="w-25">Reset Database</CustomButton>
         </Col>
       </Row>
     </Container>

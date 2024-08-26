@@ -3,6 +3,7 @@ import React from "react";
 import { Button, Form, InputGroup } from "react-bootstrap";
 import "./loginForm.scss";
 import Link from "next/link";
+import CustomButton from "@/components/common/custom-button/CustomButton";
 
 const LoginForm = () => {
   return (
@@ -23,9 +24,10 @@ const LoginForm = () => {
         </div>
 
         <InputGroup className="mt-4">
-          <Button variant="danger" type="submit" className="login-btn">
+          {/* <Button variant="danger" type="submit" className="login-btn">
             LOGIN
-          </Button>
+          </Button> */}
+          <CustomButton>LOGIN</CustomButton>
         </InputGroup>
 
         <div className="register-link mt-3">

@@ -1,7 +1,7 @@
 import React from "react";
-import "./section-title.scss";
 import { Container } from "react-bootstrap";
-import Spacer from "./spacer";
+import Spacer from "../spacer";
+import "./sectionTitle.scss";
 
 const SectionTitle = ({ children }) => {
   return (
