@@ -3,7 +3,7 @@ export const config = {
     name: "Luvenda",
     slogan: "Find your dream home",
     description:
-      "At Luvenda Home, we believe that real estate should be accessible to everyone. We are dedicated to helping you find the perfect home. Join us on this adventure. Let us help you find your dream home.",
+      "At Luvenda Home, we believe that everyone deserves access to exceptional real estate. Our dedicated team is here to guide you in finding the perfect home that fits your unique needs and desires. Join us on this exciting journey, and let us help you discover and secure your dream residence with confidence and ease.",
     version: "1.0.0",
   },
   contact: {
@@ -20,9 +20,6 @@ export const config = {
       instagram: "https://instagram.com",
       youtube: "https://youtube.com",
     },
-  },
-  mapApi: {
-    GOOGLE_MAPS_API_KEY: "AIzaSyB8SvK1CoRyIKzl9Waj5_mPjYq7edYPAKw",
   },
   api: {
     /*  baseUrl: "http://localhost:8080",  */
