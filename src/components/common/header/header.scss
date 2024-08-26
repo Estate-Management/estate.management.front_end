@@ -1,15 +1,15 @@
-@use "../../../styles/variables" as *;
-@use "../../../styles/mixins" as *;
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
 
 .header {
-  background-color: $color1;
+  background-color: v.$color1;
   position: sticky;
   top: 0;
   padding: 10px;
   z-index: 1001;
 
   &__row {
-    @include flex($ai: center);
+    @include m.flex($ai: center);
   }
 
   &__logo,
@@ -23,19 +23,19 @@
 
   .header-nav {
     .navbar-collapse {
-      @include flex($jc: space-between, $ai: center);
+      @include m.flex($jc: space-between, $ai: center);
     }
 
     .navbar-toggler {
       margin: auto;
-      color: $color1;
-      border-color: $color3;
-      background-color: $color4 !important;
+      color: v.$color1;
+      border-color: v.$color3;
+      background-color: v.$color4 !important;
 
       &:hover {
-        background-color: $color1 !important;
-        color: $color4;
-        border-color: $color4;
+        background-color: v.$color1 !important;
+        color: v.$color4;
+        border-color: v.$color4;
       }
     }
 

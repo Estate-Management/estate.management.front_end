@@ -7,7 +7,7 @@ const ContactPage = () => {
     <>
       <SectionTitle>CONTACT US</SectionTitle>
       <ContactSection />
-      <Spacer height={10} />
+      <Spacer/>
     </>
   );
 };

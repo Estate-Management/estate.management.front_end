@@ -5,9 +5,9 @@ import React from "react";
 const UnAuthorizedPage = () => {
 	return (
 		<>
-			<Spacer height={30}/>
+			<Spacer/>
 			<UnAuthorized />
-			<Spacer height={30}/>
+			<Spacer/>
 		</>
 	);
 };
