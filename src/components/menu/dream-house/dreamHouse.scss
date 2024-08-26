@@ -1,0 +1,52 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.dream-house-banner {
+  padding: 2rem;
+  border-radius: 20px;
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color3;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: $color2;
+    margin-bottom: 1.5rem;
+  }
+
+  .register-button {
+    .arrow {
+      margin-left: 0.5rem;
+      font-size: 1.25rem;
+    }
+  }
+
+  .image-col {
+    text-align: right;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .text-col,
+    .image-col {
+      text-align: center;
+    }
+
+    .image-col {
+      margin-top: 1rem;
+    }
+
+    .register-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
