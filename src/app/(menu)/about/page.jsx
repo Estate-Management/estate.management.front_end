@@ -11,7 +11,7 @@ const AboutPage = () => {
       <MissionSection />
       <SellingOptions/>
       <ContactUs/>
-      <Spacer height={10} />
+      <Spacer/>
     </>
   );
 };

@@ -6,9 +6,9 @@ const NotFoundPage = () => {
 
 	return (
 		<>
-			<Spacer height={30}/>
+			<Spacer />
 			<NotFound />
-			<Spacer height={30}/>
+			<Spacer />
 		</>
 	);
 };
