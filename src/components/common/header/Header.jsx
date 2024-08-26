@@ -1,4 +1,4 @@
-import Logo from "@/components/logo";
+import Logo from "@/components/common/logo";
 import { Col, Container, Row } from "react-bootstrap";
 import MainMenu from "./MainMenu";
 import LoginButton from "./Login";

@@ -1,6 +1,7 @@
 "use client";
-import { Button, Form, InputGroup } from 'react-bootstrap';
-import './resetCodeForm.scss';
+import { Button, Form, InputGroup } from "react-bootstrap";
+import "./resetCodeForm.scss";
+import CustomButton from "@/components/common/custom-button/CustomButton";
 
 const ResetCodeForm = () => {
   return (
@@ -11,9 +12,10 @@ const ResetCodeForm = () => {
           <Form.Control type="email" placeholder="Enter your email" />
         </Form.Group>
         <InputGroup className="mt-3">
-          <Button variant="danger" type="submit" className="send-code-btn">
+          {/* <Button variant="danger" type="submit" className="send-code-btn">
             SEND RESET CODE
-          </Button>
+          </Button> */}
+          <CustomButton>SEND RESET CODE</CustomButton>
         </InputGroup>
       </Form>
     </div>

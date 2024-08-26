@@ -1,0 +1,19 @@
+@use "../../../styles/variables" as v;
+
+.custom-button {
+    background-color: v.$color1;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 10px #000;
+    color: v.$color4;
+    
+  
+    &:hover {
+      background-color: v.$color3;
+    }
+  }
+  

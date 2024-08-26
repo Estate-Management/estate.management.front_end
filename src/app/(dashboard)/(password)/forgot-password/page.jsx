@@ -1,4 +1,4 @@
-import SectionTitle from "@/components/common/section-title";
+import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
 import ResetCodeForm from "@/components/dashboard/password/forgot-password/ResetCodeForm";
 import React from "react";
 

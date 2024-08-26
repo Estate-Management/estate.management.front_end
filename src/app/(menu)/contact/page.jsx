@@ -1,4 +1,4 @@
-import SectionTitle from "@/components/common/section-title";
+import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
 import Spacer from "@/components/common/spacer";
 import ContactSection from "@/components/menu/contact/ContactSection ";
 
@@ -7,7 +7,7 @@ const ContactPage = () => {
     <>
       <SectionTitle>CONTACT US</SectionTitle>
       <ContactSection />
-      <Spacer/>
+      <Spacer />
     </>
   );
 };

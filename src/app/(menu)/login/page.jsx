@@ -1,4 +1,4 @@
-import SectionTitle from "@/components/common/section-title";
+import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
 import LoginForm from "@/components/menu/login/LoginForm";
 
 const LoginPage = () => {

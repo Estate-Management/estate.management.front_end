@@ -1,4 +1,4 @@
-import SectionTitle from "@/components/common/section-title";
+import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
 import Spacer from "@/components/common/spacer";
 import ContactUs from "@/components/menu/about/ContactUs";
 import MissionSection from "@/components/menu/about/MissionSection";
@@ -9,9 +9,9 @@ const AboutPage = () => {
     <>
       <SectionTitle>ABOUT US</SectionTitle>
       <MissionSection />
-      <SellingOptions/>
-      <ContactUs/>
-      <Spacer/>
+      <SellingOptions />
+      <ContactUs />
+      <Spacer />
     </>
   );
 };

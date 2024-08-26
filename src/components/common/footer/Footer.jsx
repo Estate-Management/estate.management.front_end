@@ -5,7 +5,7 @@ import "./footer.scss";
 import Contacts from "./Contacts";
 import { config } from "@/helpers/config";
 import Menu from "./Menu";
-import Logo from "@/components/logo";
+import Logo from "@/components/common/logo";
 
 const Footer = () => {
   return (

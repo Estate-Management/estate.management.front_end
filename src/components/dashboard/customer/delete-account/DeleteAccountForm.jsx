@@ -1,7 +1,8 @@
 "use client";
-import { Button, Form, InputGroup, Alert } from 'react-bootstrap';
-import './deleteAccountForm.scss';
-import { FaExclamationTriangle } from 'react-icons/fa';
+import { Button, Form, InputGroup, Alert } from "react-bootstrap";
+import "./deleteAccountForm.scss";
+import { FaExclamationTriangle } from "react-icons/fa";
+import CustomButton from "@/components/common/custom-button/CustomButton";
 
 const DeleteAccountForm = () => {
   return (
@@ -24,16 +25,21 @@ const DeleteAccountForm = () => {
           <Form.Control type="tel" placeholder="Enter your phone number" />
         </Form.Group>
         <InputGroup className="mt-4">
-          <Button variant="danger" type="submit" className="delete-account-btn">
+          {/* <Button variant="danger" type="submit" className="delete-account-btn">
             DELETE ACCOUNT
-          </Button>
+          </Button> */}
+          <CustomButton>DELETE ACCOUNT</CustomButton>
         </InputGroup>
       </Form>
 
-      <Alert variant="danger" className="mt-4 account-deletion-info d-flex align-items-center">
+      <Alert
+        variant="danger"
+        className="mt-4 account-deletion-info d-flex align-items-center"
+      >
         <FaExclamationTriangle className="alert-icon me-3" />
         <span>
-          If you delete your account, all related records with this account will also be deleted permanently.
+          If you delete your account, all related records with this account will
+          also be deleted permanently.
         </span>
         <FaExclamationTriangle className="alert-icon ms-3" />
       </Alert>
