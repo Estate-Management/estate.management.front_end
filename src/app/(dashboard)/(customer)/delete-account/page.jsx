@@ -1,7 +1,10 @@
 import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
 import DeleteAccountForm from "@/components/dashboard/customer/delete-account/DeleteAccountForm";
-import React from "react";
 
+export const metadata = {
+  title: "Delete Account",
+  description: "Permanently delete your account and all associated data from our system.",
+};
 const DeleteAccountPage = () => {
   return (
     <>

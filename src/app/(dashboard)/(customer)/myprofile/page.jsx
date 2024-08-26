@@ -1,6 +1,11 @@
 import SectionTitle from "@/components/common/sectionTitle/SectionTitle";
-import React from "react";
 import ProfileForm from "@/components/dashboard/customer/myprofile/ProfileForm";
+
+export const metadata = {
+  title: "My Profile",
+  description: "View and edit your profile information.",
+};
+
 
 const MyProfilePage = () => {
   return (
