@@ -4,6 +4,7 @@ import "@/styles/index.scss";
 import Header from "@/components/common/header/Header";
 import Footer from "@/components/common/footer/Footer";
 import ScrollToTopButton from "@/components/common/scroll-to-top/scroll-to-top-button";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
