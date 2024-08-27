@@ -1,10 +1,15 @@
-import React from "react";
-import { Button, Container, Row, Col, Alert } from "react-bootstrap";
+"use client";
+import { Container, Row, Col, Alert } from "react-bootstrap";
 import "./resetDatabaseAlert.scss";
 import { FaExclamationTriangle } from "react-icons/fa";
 import CustomButton from "@/components/common/custom-button/CustomButton";
+import { showConfirm, showToast, showSuccess  } from "@/helpers/alert-service";
 
 const ResetDatabaseAlert = () => {
+  const handleSuccess = () => {
+    showSuccess('Action Successful!', 'Your action has been completed successfully.');
+  };
+  
   return (
     <Container className="alert-custom mt-4">
       <Row>
@@ -21,7 +26,9 @@ const ResetDatabaseAlert = () => {
             <FaExclamationTriangle className="alert-icon ms-3 fs-1 text-warning" />
           </Alert>
           {/* <Button className="btn-custom">Reset Database</Button> */}
-          <CustomButton className="w-25">Reset Database</CustomButton>
+          <CustomButton className="w-25" onClick={handleSuccess}>
+            Reset Database
+          </CustomButton>
         </Col>
       </Row>
     </Container>
