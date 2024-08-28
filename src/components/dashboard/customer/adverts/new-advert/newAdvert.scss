@@ -1,0 +1,39 @@
+
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.property-form {
+    padding: 20px;
+    background-color: $color4;
+    border-radius: 8px;
+    
+    h5 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+
+    }
+  
+    .image-upload-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .property-form {
+      .row {
+        flex-direction: column;
+      }
+    }
+  }
+  
