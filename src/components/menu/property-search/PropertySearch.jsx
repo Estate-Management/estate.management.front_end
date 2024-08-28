@@ -12,9 +12,11 @@ import {
 import "./propertySearch.scss";
 import { GoSearch } from "react-icons/go";
 import Link from "next/link";
+import cities from "@/helpers/city.json";
 const PropertySearch = () => {
   const [searchType, setSearchType] = useState("Rent");
   const [propertyType, setPropertyType] = useState([]);
+  const [city, setCity] = useState("");
 
   const handleSearch = () => {
     // Placeholder for the API call
@@ -50,11 +52,19 @@ const PropertySearch = () => {
           </ToggleButtonGroup>
 
           <div className="search-bar">
-            <input
-              type="text"
-              placeholder="Search by location"
+            <Form.Select
               className="form-control"
-            />
+              onChange={(e) => setCity(e.target.value)}
+            >
+              <option value="" className="option">
+                Search by location
+              </option>
+              {cities.map((city) => (
+                <option key={city.id} value={city.id}>
+                  {city.name}
+                </option>
+              ))}
+            </Form.Select>
             <Button
               variant="primary"
               className="search-button"
