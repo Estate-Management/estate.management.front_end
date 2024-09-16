@@ -1,0 +1,46 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *;
+
+.dashboard-container {
+  background-color: $color4;
+  padding: 20px;
+
+  .dashboard-card {
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 3rem;
+      color: #a6a6a6;
+      margin-bottom: 10px;
+    }
+
+    .number {
+      font-size: 2rem;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      color: #444;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .dashboard-card .number {
+      font-size: 1.8rem;
+    }
+
+    .dashboard-card .icon {
+      font-size: 2.5rem;
+    }
+  }
+}

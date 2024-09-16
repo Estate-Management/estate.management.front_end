@@ -1,0 +1,100 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.property-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.common-info,
+.address-info,
+.properties-info,
+.images-info {
+  margin-bottom: 20px;
+}
+
+.image-upload-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.upload-placeholder {
+  text-align: center;
+}
+
+.upload-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; // Ensures the image takes the full width of its container
+  }
+  
+  .btn {
+    width: 100%;  // Ensures buttons take the full width of the container
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+  }
+}
+
+.tour-requests-table {
+  margin-top: 20px;
+}
+
+.status-badge {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.action-buttons {
+  button {
+    margin-right: 5px;
+  }
+}
+
+.update-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

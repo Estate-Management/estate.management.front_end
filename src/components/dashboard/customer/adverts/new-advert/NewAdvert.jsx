@@ -60,7 +60,7 @@ const NewAdvertForm = () => {
           <Col md={4}>
             <Form.Group controlId="country">
               <Form.Label>Country</Form.Label>
-              <Form.Control as="select" value="Türkiye" required>
+              <Form.Control as="select" value="Türkiye" disabled>
                 <option value="Türkiye">Türkiye</option>
               </Form.Control>
             </Form.Group>

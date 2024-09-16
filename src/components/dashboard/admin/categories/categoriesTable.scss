@@ -1,0 +1,43 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *;
+
+
+
+.table-container {
+  padding: 20px;
+  background-color: $color4;
+
+  .add-new-btn {
+    background-color: $color1;
+    color: $color4;
+    font-weight: bold;
+    border: none;
+  }
+
+  table {
+    background-color: $color4;
+    border-radius: 8px;
+    overflow: hidden;
+
+    thead {
+      background-color: $color4;
+    }
+
+    tbody {
+      td {
+        text-align: center;
+
+        svg {
+          font-size: 1.5rem;
+        }
+
+        button {
+          svg {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+}
