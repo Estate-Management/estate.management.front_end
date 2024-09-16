@@ -1,0 +1,51 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *;
+
+.filter-form-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  
+    .form-section {
+      padding: 20px;
+      background-color: #f4f4f4;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+      h5 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+  
+      .print-btn {
+        background-color: $color1;
+        border: none;
+        font-size: 3rem;
+      }
+  
+      input,
+      select {
+        margin-bottom: 10px;
+      }
+  
+      .input-group-text {
+        font-size: 1rem;
+        padding: 0.5rem;
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .form-section {
+        h5 {
+          font-size: 1rem;
+        }
+  
+        input,
+        select {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  
